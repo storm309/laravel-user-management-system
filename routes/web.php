@@ -50,19 +50,19 @@ use Illuminate\Support\Facades\Route;
 
 // Header Example
 
-Route::prefix('admin')->group(function () {
+// Route::prefix('admin')->group(function () {
 
-    Route::get('/users', function () {
-        return "Admin Users";
-    });
+//     Route::get('/users', function () {
+//         return "Admin Users";
+//     });
 
-});
+// });
 
-Route::get('/header', function () {
-    return response("Hello World")
-        ->header('Content-Type', 'text/plain')
-        ->header('X-Custom-Header', 'Laravel');
-});
+// Route::get('/header', function () {
+//     return response("Hello World")
+//         ->header('Content-Type', 'text/plain')
+//         ->header('X-Custom-Header', 'Laravel');
+// });
 
 
 // Set Cookie Example
@@ -100,3 +100,44 @@ Route::get('/delete-cookie', function () {
     return "Cookie Deleted";
 
 });
+
+
+// Redirect Example
+// Route::get('/dashboard', function () {
+//     return "Welcome to the Dashboard";
+// });
+
+// Route::get('/new-dashboard', function () {
+//     return redirect('/dashboard')
+//     ->with('Success' , 'You have been redirected to the dashboard');
+// });
+
+// named route example
+
+// Route::get('/old-dashboard',function(){
+//     return "Dashboard";
+// })->name('dashboard');
+
+// Route::get('/student', function () {
+//     return redirect()->route('dashboard');
+// });
+
+// LOGIN ROUTE with email and password
+
+Route::get('/login', function () {
+
+$email = request('email');
+$password = request('password');
+
+if($email == 'shivam@example.com' && $password == '123123') {
+    return redirect()->route('dashboard')
+    ->with('Success' , 'You have been logged in successfully');
+}
+
+return redirect()->back()->with('Error', 'Invalid email or password');
+
+});
+
+Route::get('/dashboard', function () {
+    return "Welcome to Dashboard";
+})->name('dashboard');
