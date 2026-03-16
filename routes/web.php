@@ -139,5 +139,5 @@ return redirect()->back()->with('Error', 'Invalid email or password');
 });
 
 Route::get('/dashboard', function () {
-    return "Welcome to Dashboard";
+    return view('dashboard');
 })->name('dashboard');
