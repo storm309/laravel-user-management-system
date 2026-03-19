@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\UserController;
-// use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StudentController;
 
 // Route::get('/Home', function () {
 //     return view('Home');
@@ -58,6 +59,7 @@ use Illuminate\Support\Facades\Route;
 
 // });
 
+
 // Route::get('/header', function () {
 //     return response("Hello World")
 //         ->header('Content-Type', 'text/plain')
@@ -67,39 +69,48 @@ use Illuminate\Support\Facades\Route;
 
 // Set Cookie Example
 
-use Illuminate\Support\Facades\Cookie;
+// use Illuminate\Support\Facades\Cookie;
 
-Route::get('/set-cookie', function () {
+// Route::get('/set-cookie', function () {
 
-    $response = response("Cookie Set Successfully");
+//     $response = response("Cookie Set Successfully");
 
-    $response->cookie('username', 'Shivam', 1);
+//     $response->cookie('username', 'Shivam', 1);
 
-    return $response;
+//     return $response;
 
-});
-
-
-// Get Cookie Example
-
-Route::get('/get-cookie', function () {
-
-    $value = Cookie::get('username');
-
-    return "Cookie Value: " . $value;
-
-});
+// });
 
 
-// Delete Cookie Example
+// // Get Cookie Example
 
-Route::get('/delete-cookie', function () {
+// Route::get('/get-cookie', function () {
 
-    Cookie::queue(Cookie::forget('username'));
+//     $value = Cookie::get('username');
 
-    return "Cookie Deleted";
+//     return "Cookie Value: " . $value;
 
-});
+// });
+
+// // reading cookie
+// Route::get('/read-cookie', function () {
+
+//     $value = request()->cookie('username');
+
+//     return "Cookie Value: " . $value;
+
+// });
+
+
+// // Delete Cookie Example
+
+// Route::get('/delete-cookie', function () {
+
+//     Cookie::queue(Cookie::forget('username'));
+
+//     return "Cookie Deleted";
+
+// });
 
 
 // Redirect Example
@@ -122,22 +133,42 @@ Route::get('/delete-cookie', function () {
 //     return redirect()->route('dashboard');
 // });
 
+// redirecting to controller
+
+// Route::get('/ab', [UserController::class, 'index']);
+
+// Route::get('/go', function () {
+//     return redirect()->action([UserController::class,'index']);
+// });
+
+
 // LOGIN ROUTE with email and password
 
-Route::get('/login', function () {
+// Route::get('/login', function () {
 
-$email = request('email');
-$password = request('password');
+// $email = request('email');
+// $password = request('password');
 
-if($email == 'shivam@example.com' && $password == '123123') {
-    return redirect()->route('dashboard')
-    ->with('Success' , 'You have been logged in successfully');
-}
+// if($email == 'shivam@example.com' && $password == '123123') {
+//     return redirect()->route('dashboard')
+//     ->with('Success' , 'You have been logged in successfully');
+// }
 
-return redirect()->back()->with('Error', 'Invalid email or password');
+// return redirect()->back()->with('Error', 'Invalid email or password');
 
-});
+// });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
+
+
+
+// Question 1 of StudentProfile
+
+// Route::get('/student/{id}', [StudentController::class, 'studentProfile'])->name('student.profile');
+
+
+// Product routes - Question 2
+Route::get('/product/{id}', [ProductController::class, 'showDetails'])->name('product.details');
+Route::get('/product-redirect', [ProductController::class, 'redirectToProduct']);

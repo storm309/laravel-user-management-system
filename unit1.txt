@@ -1,0 +1,19 @@
+// request lifecycle in laravel
+
+Request(User or View)
+ ↓
+index.php
+ ↓
+Bootstrap
+ ↓
+Kernel
+ ↓
+Middleware
+ ↓
+Route
+ ↓
+Controller
+ ↓
+Model / View
+ ↓
+Response (User or View)

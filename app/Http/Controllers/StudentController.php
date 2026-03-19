@@ -4,13 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class StudentController extends Controller
 {
-    public function index()
-    {
-        return 'This is my users page';
-    }
-
     public function studentProfile($id, Request $request)
     {
         // Get URL parameter
@@ -19,16 +14,16 @@ class UserController extends Controller
         // Sample student data
         $student = [
             'id' => $studentId,
-            'name' => 'John Doe',
-            'email' => 'john@example.com',
-            'phone' => '1234567890',
+            'name' => 'Shivam',
+            'email' => 'shivam@example.com',
+            'phone' => '8252980774',
             'course' => 'Computer Science'
         ];
 
         // Global variable
         $appName = 'Student Management System';
 
-        // Create response with view
+        // Create custom header
         $response = response()->view('student.profile', [
             'student' => $student,
             'appName' => $appName,
@@ -45,5 +40,10 @@ class UserController extends Controller
         $response->header('X-Custom-Header', 'Student Portal');
 
         return $response;
+    }
+
+    public function index()
+    {
+        return "User Index";
     }
 }
