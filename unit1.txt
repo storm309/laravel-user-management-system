@@ -17,3 +17,21 @@ Controller
 Model / View
  ↓
 Response (User or View)
+
+
+// Important Commands
+Q1. Create a new Laravel project named "myapp".
+Command: composer create-project --prefer-dist laravel/laravel myapp
+Q2. Create a new controller named "ProductController".
+Command: php artisan make:controller ProductController
+Q3. Create a new model named "Product".
+Command: php artisan make:model Product
+Q4. Run the Laravel development server.
+Command: php artisan serve
+Q5. Create a resource controller named "UserController".
+Command: php artisan make:controller UserController --resource
+Q6. Create a Api controller named "ApiController".
+Command: php artisan make:controller ApiController --api
+Q7. Create a Single Action controller named "SingleActionController".
+Command: php artisan make:controller SingleActionController --invokable
+
