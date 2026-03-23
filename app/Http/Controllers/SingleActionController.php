@@ -9,9 +9,12 @@ class SingleActionController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request, $name, $id)
     {
-        //
-        return "This is a single action controller";
+        // Handle the incoming request
+        return response()->json([
+        'name' => $name,
+        'id' => $id,
+    ]);
     }
 }

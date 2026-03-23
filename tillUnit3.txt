@@ -59,4 +59,3 @@ Here’s how you can set up resourceful routing for a `ProductController` in Lar
 | GET         | /products/{id}/edit| edit         | products.edit      |
 | PUT/PATCH   | /products/{id}     | update       | products.update    |
 | DELETE      | /products/{id}     | destroy      | products.destroy   |
-

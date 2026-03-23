@@ -183,3 +183,5 @@ Route::resource('books', BookController::class);
 Route::apiResource('books', BookController::class);
 // Single Action Controller Route
 Route::get('/single-action', SingleActionController::class);
+// Single Action Controller Route with parameters
+Route::get('/single-action/{name}/{id}', SingleActionController::class);
