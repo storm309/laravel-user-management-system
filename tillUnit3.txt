@@ -1,0 +1,62 @@
+// request lifecycle in laravel
+
+Request(User or View)
+ ↓
+index.php
+ ↓
+Bootstrap
+ ↓
+Kernel
+ ↓
+Middleware
+ ↓
+Route
+ ↓
+Controller
+ ↓
+Model / View
+ ↓
+Response (User or View)
+
+
+// Important Commands
+Q1. Create a new Laravel project named "myapp".
+Command: composer create-project --prefer-dist laravel/laravel myapp
+Q2. Create a new controller named "ProductController".
+Command: php artisan make:controller ProductController
+Q3. Create a new model named "Product".
+Command: php artisan make:model Product
+Q4. Run the Laravel development server.
+Command: php artisan serve
+Q5. Create a resource controller named "UserController".
+Command: php artisan make:controller UserController --resource
+Q6. Create a Api controller named "ApiController".
+Command: php artisan make:controller ApiController --api
+Q7. Create a Single Action controller named "SingleActionController".
+Command: php artisan make:controller SingleActionController --invokable
+
+// Unit 3: Resourceful Routing in Laravel
+Resourceful routing in Laravel provides a convenient way to create routes that handle typical CRUD (Create, Read, Update, Delete) operations for a resource.
+By using the `Route::resource` method, you can automatically generate all the necessary routes for a controller that follows the standard naming conventions.
+Here’s how you can set up resourceful routing for a `ProductController` in Laravel:
+1. First, ensure you have a `ProductController` created. If you haven't created it yet, you can do so using the following command:
+   ```bash
+   php artisan make:controller ProductController --resource
+   ```
+   This command will create a controller with methods for all the standard CRUD operations: `index`, `create`, `store`, `show`, `edit`, `update`, and `destroy`.
+2. Next, you need to define the resourceful routes in your `routes/web.php` file. You can do this by adding the following line:
+   ```php
+   use App\Http\Controllers\ProductController;
+    Route::resource('products', ProductController::class);
+    ```
+    This will generate the following routes:
+| HTTP Method | URI                | Action       | Route Name         |
+|-------------|--------------------|--------------|--------------------|
+| GET         | /products          | index        | products.index     |
+| GET         | /products/create   | create       | products.create    |
+| POST        | /products          | store        | products.store     |
+| GET         | /products/{id}     | show         | products.show      |
+| GET         | /products/{id}/edit| edit         | products.edit      |
+| PUT/PATCH   | /products/{id}     | update       | products.update    |
+| DELETE      | /products/{id}     | destroy      | products.destroy   |
+

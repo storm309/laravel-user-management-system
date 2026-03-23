@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\BookController;
+use App\Http\Controllers\SingleActionController;
 
 // Route::get('/Home', function () {
 //     return view('Home');
@@ -170,5 +172,14 @@ use App\Http\Controllers\StudentController;
 
 
 // Product routes - Question 2
-Route::get('/product/{id}', [ProductController::class, 'showDetails'])->name('product.details');
-Route::get('/product-redirect', [ProductController::class, 'redirectToProduct']);
+// Route::get('/product/{id}', [ProductController::class, 'showDetails'])->name('product.details');
+// Route::get('/product-redirect', [ProductController::class, 'redirectToProduct']);
+
+// Resourceful Routing for ProductController
+Route::resource('products', ProductController::class);
+// Resourceful Routing for BookController (This is for API Controller)
+Route::resource('books', BookController::class);
+// API Resourceful Routing for BookController
+Route::apiResource('books', BookController::class);
+// Single Action Controller Route
+Route::get('/single-action', SingleActionController::class);

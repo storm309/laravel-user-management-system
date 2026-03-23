@@ -6,48 +6,63 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
-        return "This is my product page";
-    }
-
-
-    public function showDetails($id)
-    {
-        // Sample product data (in real app, fetch from database)
-        $products = [
-            101 => ['id' => 101, 'name' => 'Laptop', 'price' => 999.99, 'description' => 'High-performance laptop'],
-            102 => ['id' => 102, 'name' => 'Mouse', 'price' => 29.99, 'description' => 'Wireless mouse'],
-            103 => ['id' => 103, 'name' => 'Keyboard', 'price' => 79.99, 'description' => 'Mechanical keyboard'],
-        ];
-
-        // Get product data or return 404
-        $product = $products[$id] ?? null;
-
-        if (!$product) {
-            abort(404, 'Product not found');
-        }
-
-        // Create response with view
-        $response = response()->view('product.details', compact('product'));
-
-        // Attach cookie with product id and name (expires in 60 minutes)
-        $response->cookie('product_id', $product['id'], 60);
-        $response->cookie('product_name', $product['name'], 60);
-
-        // Add custom header to response
-        $response->header('X-Product-ID', $product['id']);
-        $response->header('X-Product-Name', $product['name']);
-
-        return $response;
+        //
+        return "This is the product index page";
     }
 
     /**
-     * Redirect to product details using named route
+     * Show the form for creating a new resource.
      */
-    public function redirectToProduct()
+    public function create()
     {
-        // Redirect to product with ID 101 using named route
-        return redirect()->route('product.details', ['id' => 101]);
+        return "This is the product create form";
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        // Logic to store the product
+        return "This is the product store method";
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        return "This is the product show method for ID: ".$id;
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+        return "This is the product edit form for product id: ".$id;
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+        return "This is the product update method for ID: ".$id;
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        return "This is the product destroy method for ID: ".$id;
     }
 }
