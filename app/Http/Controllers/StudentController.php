@@ -46,4 +46,31 @@ class StudentController extends Controller
     {
         return "User Index";
     }
+
+    public function students()
+    {
+        // Get all students
+        $students = [
+            [
+                'id' => 1,
+                'name' => 'Shivam',
+                'email' => 'shivam@example.com',
+                'course' => 'Computer Science'
+            ],
+            [
+                'id' => 2,
+                'name' => 'Raj',
+                'email' => 'raj@example.com',
+                'course' => 'Information Technology'
+            ],
+            [
+                'id' => 3,
+                'name' => 'Priya',
+                'email' => 'priya@example.com',
+                'course' => 'Electronics'
+            ]
+        ];
+
+        return view('student.index', ['students' => $students]);
+    }
 }

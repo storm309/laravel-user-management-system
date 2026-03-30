@@ -34,6 +34,8 @@ Q6. Create a Api controller named "ApiController".
 Command: php artisan make:controller ApiController --api
 Q7. Create a Single Action controller named "SingleActionController".
 Command: php artisan make:controller SingleActionController --invokable
+Q8. use app.php is a model and create a resource controller named "AppController".
+Command: php artisan make:controller AppController --resource --model=App
 
 // Unit 3: Resourceful Routing in Laravel
 Resourceful routing in Laravel provides a convenient way to create routes that handle typical CRUD (Create, Read, Update, Delete) operations for a resource.
@@ -59,3 +61,84 @@ Here’s how you can set up resourceful routing for a `ProductController` in Lar
 | GET         | /products/{id}/edit| edit         | products.edit      |
 | PUT/PATCH   | /products/{id}     | update       | products.update    |
 | DELETE      | /products/{id}     | destroy      | products.destroy   |
+
+
+## Middleware in Laravel
+Middleware in Laravel is a mechanism for filtering HTTP requests entering your application. It acts as a bridge between a request and a response, allowing you to perform various tasks such as authentication, logging, and modifying request and response objects.
+### Common Middleware in Laravel:
+command: php artisan make:middleware CheckAge
+1. **Authentication Middleware**: This middleware checks if the user is authenticated before allowing access to certain routes. It is typically used to protect routes that require user login.
+2. **CSRF Protection Middleware**: This middleware protects your application from cross-site request forgery attacks by generating a token for each active user session. It ensures that the incoming requests are from authenticated users.
+3. **Logging Middleware**: This middleware can be used to log details about incoming requests and outgoing responses, which can be helpful for debugging and monitoring your application.
+4. **Custom Middleware**: You can create your own middleware to perform specific tasks based on your application's requirements. For example, you might create a middleware to check if a user has a certain role before allowing access to a route.
+### Creating Custom Middleware:
+To create a custom middleware, you can use the Artisan command:
+```bashphp artisan make:middleware CheclUser
+```
+This will create a new middleware class in the `app/Http/Middleware` directory. You can then define the logic for your middleware in the `handle` method. For example, if you want to check if a user is old enough to access a certain route, you can implement the logic
+as follows:
+```php<?php
+namespace App\Http\Middleware;\
+use Closure;
+use Illuminate\Http\Request;
+
+// Middleware types - Global Middleware: Applied to all routes in the application.
+// Route Middleware: Applied to specific routes or groups of routes.
+// Middleware Parameters - You can pass parameters to middleware to customize their behavior. For example,
+// you might have a middleware that checks for a specific user role, and you can pass the required role as a parameter.
+
+
+// Blade Templating in Laravel
+Blade is Laravel's powerful templating engine that allows you to create dynamic and reusable views. It provides a simple syntax for defining templates and includes features such as template inheritance, sections, and components.
+### Blade Syntax:
+1. **Template Inheritance**: Blade allows you to define a base layout and then extend it in your child views. This promotes code reusability and helps maintain a consistent design across your application.
+   ```php
+   <!-- resources/views/layouts/app.blade.php -->
+   <html>
+   <head>
+       <title>My Application</title>
+   </head>
+   <body>
+       @yield('content')
+   </body>
+   </html>
+   ```
+   ```php
+   <!-- resources/views/home.blade.php -->
+   @extends('layouts.app')
+
+   @section('content')
+       <h1>Welcome to My Application</h1>
+       <p>This is the home page.</p>
+   @endsection
+   ```
+2. **Blade Directives**: Blade provides various directives for control structures, loops, and other common tasks. For example:
+   ```php
+   @if($user->isAdmin())
+       <p>Welcome, Admin!</p>
+   @else
+       <p>Welcome, User!</p>
+   @endif
+   ```
+   ```php
+   @foreach($products as $product)
+       <p>{{ $product->name }}</p>
+   @endforeach
+   ```
+3. **Blade Components**: Blade allows you to create reusable components that can be included in multiple views. This is useful for creating common UI elements such as headers, footers, and navigation bars.
+   ```php
+   <!-- resources/views/components/header.blade.php -->
+    <header>
+       <h1>My Application Header</h1>
+   </header>
+   ```
+   ```php
+   <!-- resources/views/home.blade.php -->
+   @extends('layouts.app')
+    @section('content')
+         @include('components.header')
+         <h1>Welcome to My Application</h1>
+         <p>This is the home page.</p>
+    @endsection
+   ```
+
