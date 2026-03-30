@@ -1,1 +1,4 @@
-<h2> This is About Page</h2>
+@extends('layout')
+@section('content')
+    <h1>This is About Page</h1>
+@endsection
