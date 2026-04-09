@@ -145,11 +145,18 @@ Route::get('/dashboard', function () {
 Route::get('/test', function () {
     return view('content');
 });
-
+// New routes for home1 and about1
 Route::get('/home1', function () {
     return view('home1');
 });
-
+// New route for about1
 Route::get('/about1', function () {
     return view('about1');
+});
+// Route for header and footer
+Route::get('/header', function () {
+    return view('header');
+});
+Route::get('/footer', function () {
+    return view('footer');
 });
