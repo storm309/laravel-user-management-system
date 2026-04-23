@@ -1,8 +1,12 @@
 <?php
 
+
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\http\Request;
+use App\Mail\Testmail;
+use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     return view('welcome');
@@ -60,3 +64,22 @@ Route::controller(App\Http\Controllers\StudentArray::class)->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+// Form routes
+Route::get('/form', [FormController::class, 'showForm']);
+Route::post('/form-submit', [FormController::class, 'submitForm']);
+
+// File upload route
+
+
+Route::get('/upload', [App\Http\Controllers\uploadFile::class, 'showUploadForm']);
+Route::post('/upload', [App\Http\Controllers\uploadFile::class, 'uploadFile']);
+
+// Sending email route
+Route::get('/send-email', function () {
+    Mail::to('shivamkumarp447@gmail.com')->send(new Testmail());
+
+    return 'Email sent successfully!';
+});

@@ -1,3 +1,13 @@
+
+// How to create a new Laravel project?
+To create a new Laravel project, you can use the Composer command-line tool. Here are the steps to create a new Laravel project named "myapp":
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to create your Laravel project.
+3. Run the following command to create a new Laravel project:
+```bash
+composer create-project laravel/laravel myapp
+```
+
 // request lifecycle in laravel
 
 Request(User or View)
@@ -220,3 +230,27 @@ This will install the required npm packages and compile the frontend assets usin
 Once you have completed these steps, you can access the authentication features of your Laravel application by visiting the appropriate routes
 (e.g., `/register`, `/login`, etc.). Breeze provides a clean and simple user interface for authentication, making it easy to get
 started with user authentication in your Laravel application.
+
+
+// what is route function in laravel and what is model view controller in laravel
+The `route` function in Laravel is a helper function that generates a URL for a given named route.
+ It allows you to create URLs based on the route's name, which can be defined in your `routes/web.php`
+file. This is particularly useful for maintaining clean and maintainable code,
+as it decouples the URL structure from the code that generates the URLs. For example, if you have a route defined as follows:
+
+// what is compact function in laravel
+The `compact` function in Laravel is a helper function that creates an array from variables and their values.
+It is commonly used in controllers to pass data to views. The `compact` function takes a list of variable names as arguments
+and returns an associative array where the keys are the variable names and the values are the corresponding variable values.
+
+// with function in laravel
+The `with` function in Laravel is a method used to pass data from a controller to a view.
+It is typically used in conjunction with the `view` function to share data with the view. For example, you can use it as follows:
+```php
+return view('welcome')->with('name', 'John');
+```
+This will pass the variable `name` with the value `John` to the `welcome` view.
+
+// global middleware in laravel
+Global middleware in Laravel is middleware that is applied to every HTTP request that enters your application.
+ It is defined in the `app/Http/Kernel.php` file under the `$middleware` property.
