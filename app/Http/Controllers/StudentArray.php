@@ -29,7 +29,7 @@ class StudentArray extends Controller
             ]
         ];
 
-        return view('students.index', ['students' => $students]);
+        return view('StudentList', ['students' => collect($students)]);
     }
 
     public function printNames()
@@ -55,11 +55,9 @@ class StudentArray extends Controller
             ]
         ];
 
-        // Print all names using foreach
-        echo "Student Names:\n";
-        foreach ($students as $student) {
-            echo $student['name'] . "\n";
-        }
+        $names = array_map(static fn ($student) => $student['name'], $students);
+        return response("Student Names:\n" . implode("\n", $names))
+            ->header('Content-Type', 'text/plain');
     }
 
     public function listStudents()

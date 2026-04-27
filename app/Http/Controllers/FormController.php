@@ -9,7 +9,7 @@ class FormController extends Controller
     // Show Form
     public function showForm()
     {
-        return view('form');
+        return view('Form');
     }
 
     // Handle Form Submission

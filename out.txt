@@ -1,0 +1,532 @@
+Running 2.9.7 (2026-04-14 13:31:52) with PHP 8.2.12 on Windows NT / 10.0
+Reading ./composer.json (C:\Users\Asus\laravel-user-management-system\composer.json)
+Loading config file ./composer.json (C:\Users\Asus\laravel-user-management-system\composer.json)
+Checked CA file C:\xampp\apache\bin\curl-ca-bundle.crt: valid
+Executing command (CWD): git --version
+Executing command (C:\Users\Asus\laravel-user-management-system): git branch -a --no-color --no-abbrev -v
+Failed to initialize global composer: Composer could not find the config file: C:/Users/Asus/AppData/Roaming/Composer/composer.json
+
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/packages.json from cache
+Downloading https://repo.packagist.org/packages.json if modified
+[304] https://repo.packagist.org/packages.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~framework.json from cache
+Downloading https://repo.packagist.org/p2/laravel/framework.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~tinker.json from cache
+Downloading https://repo.packagist.org/p2/laravel/tinker.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-fakerphp~faker.json from cache
+Downloading https://repo.packagist.org/p2/fakerphp/faker.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~breeze.json from cache
+Downloading https://repo.packagist.org/p2/laravel/breeze.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~pail.json from cache
+Downloading https://repo.packagist.org/p2/laravel/pail.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~sail.json from cache
+Downloading https://repo.packagist.org/p2/laravel/sail.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-mockery~mockery.json from cache
+Downloading https://repo.packagist.org/p2/mockery/mockery.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nunomaduro~collision.json from cache
+Downloading https://repo.packagist.org/p2/nunomaduro/collision.json if modified
+[304] https://repo.packagist.org/p2/fakerphp/faker.json
+[304] https://repo.packagist.org/p2/laravel/framework.json
+[304] https://repo.packagist.org/p2/laravel/tinker.json
+[304] https://repo.packagist.org/p2/laravel/breeze.json
+[304] https://repo.packagist.org/p2/laravel/pail.json
+[304] https://repo.packagist.org/p2/laravel/sail.json
+[304] https://repo.packagist.org/p2/mockery/mockery.json
+[304] https://repo.packagist.org/p2/nunomaduro/collision.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~container.json from cache
+Downloading https://repo.packagist.org/p2/psr/container.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~deprecation-contracts.json from cache
+Downloading https://repo.packagist.org/p2/symfony/deprecation-contracts.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-brick~math.json from cache
+Downloading https://repo.packagist.org/p2/brick/math.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~inflector.json from cache
+Downloading https://repo.packagist.org/p2/doctrine/inflector.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-dragonmantank~cron-expression.json from cache
+Downloading https://repo.packagist.org/p2/dragonmantank/cron-expression.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-egulias~email-validator.json from cache
+Downloading https://repo.packagist.org/p2/egulias/email-validator.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-fruitcake~php-cors.json from cache
+Downloading https://repo.packagist.org/p2/fruitcake/php-cors.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~guzzle.json from cache
+Downloading https://repo.packagist.org/p2/guzzlehttp/guzzle.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~uri-template.json from cache
+Downloading https://repo.packagist.org/p2/guzzlehttp/uri-template.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~prompts.json from cache
+Downloading https://repo.packagist.org/p2/laravel/prompts.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~serializable-closure.json from cache
+Downloading https://repo.packagist.org/p2/laravel/serializable-closure.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~commonmark.json from cache
+Downloading https://repo.packagist.org/p2/league/commonmark.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem-local.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~uri.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-monolog~monolog.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nesbot~carbon.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nunomaduro~termwind.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~log.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~simple-cache.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ramsey~uuid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~console.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~error-handler.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~finder.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~http-foundation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~http-kernel.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mailer.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php83.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~process.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~routing.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~uid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~var-dumper.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-tijsverkoyen~css-to-inline-styles.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-vlucas~phpdotenv.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-voku~portable-ascii.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~console.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~support.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psy~psysh.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~filesystem.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~validation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~log.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~process.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~yaml.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-hamcrest~hamcrest-php.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-filp~whoops.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-facade~ignition-contracts.json from cache
+[304] https://repo.packagist.org/p2/symfony/deprecation-contracts.json
+[304] https://repo.packagist.org/p2/brick/math.json
+Downloading https://repo.packagist.org/p2/league/flysystem.json if modified
+Downloading https://repo.packagist.org/p2/league/flysystem-local.json if modified
+[304] https://repo.packagist.org/p2/psr/container.json
+[304] https://repo.packagist.org/p2/doctrine/inflector.json
+[304] https://repo.packagist.org/p2/dragonmantank/cron-expression.json
+[304] https://repo.packagist.org/p2/egulias/email-validator.json
+[304] https://repo.packagist.org/p2/fruitcake/php-cors.json
+[304] https://repo.packagist.org/p2/guzzlehttp/guzzle.json
+[304] https://repo.packagist.org/p2/guzzlehttp/uri-template.json
+[304] https://repo.packagist.org/p2/laravel/prompts.json
+[304] https://repo.packagist.org/p2/laravel/serializable-closure.json
+[304] https://repo.packagist.org/p2/league/commonmark.json
+Downloading https://repo.packagist.org/p2/league/uri.json if modified
+Downloading https://repo.packagist.org/p2/monolog/monolog.json if modified
+Downloading https://repo.packagist.org/p2/nesbot/carbon.json if modified
+Downloading https://repo.packagist.org/p2/nunomaduro/termwind.json if modified
+Downloading https://repo.packagist.org/p2/psr/log.json if modified
+Downloading https://repo.packagist.org/p2/psr/simple-cache.json if modified
+Downloading https://repo.packagist.org/p2/ramsey/uuid.json if modified
+Downloading https://repo.packagist.org/p2/symfony/console.json if modified
+Downloading https://repo.packagist.org/p2/symfony/error-handler.json if modified
+Downloading https://repo.packagist.org/p2/symfony/finder.json if modified
+[304] https://repo.packagist.org/p2/league/flysystem.json
+[304] https://repo.packagist.org/p2/league/flysystem-local.json
+Downloading https://repo.packagist.org/p2/symfony/http-foundation.json if modified
+Downloading https://repo.packagist.org/p2/symfony/http-kernel.json if modified
+[304] https://repo.packagist.org/p2/league/uri.json
+[304] https://repo.packagist.org/p2/monolog/monolog.json
+[304] https://repo.packagist.org/p2/nesbot/carbon.json
+[304] https://repo.packagist.org/p2/nunomaduro/termwind.json
+[304] https://repo.packagist.org/p2/psr/log.json
+[304] https://repo.packagist.org/p2/psr/simple-cache.json
+[304] https://repo.packagist.org/p2/ramsey/uuid.json
+[304] https://repo.packagist.org/p2/symfony/console.json
+[304] https://repo.packagist.org/p2/symfony/error-handler.json
+[304] https://repo.packagist.org/p2/symfony/finder.json
+Downloading https://repo.packagist.org/p2/symfony/mailer.json if modified
+Downloading https://repo.packagist.org/p2/symfony/mime.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php83.json if modified
+Downloading https://repo.packagist.org/p2/symfony/process.json if modified
+Downloading https://repo.packagist.org/p2/symfony/routing.json if modified
+Downloading https://repo.packagist.org/p2/symfony/uid.json if modified
+Downloading https://repo.packagist.org/p2/symfony/var-dumper.json if modified
+Downloading https://repo.packagist.org/p2/tijsverkoyen/css-to-inline-styles.json if modified
+Downloading https://repo.packagist.org/p2/vlucas/phpdotenv.json if modified
+Downloading https://repo.packagist.org/p2/voku/portable-ascii.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-kernel.json
+Downloading https://repo.packagist.org/p2/illuminate/console.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-foundation.json
+Downloading https://repo.packagist.org/p2/illuminate/contracts.json if modified
+[304] https://repo.packagist.org/p2/symfony/mailer.json
+[304] https://repo.packagist.org/p2/symfony/mime.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php83.json
+[304] https://repo.packagist.org/p2/symfony/process.json
+[304] https://repo.packagist.org/p2/symfony/routing.json
+[304] https://repo.packagist.org/p2/symfony/uid.json
+[304] https://repo.packagist.org/p2/symfony/var-dumper.json
+[304] https://repo.packagist.org/p2/tijsverkoyen/css-to-inline-styles.json
+[304] https://repo.packagist.org/p2/vlucas/phpdotenv.json
+[304] https://repo.packagist.org/p2/voku/portable-ascii.json
+Downloading https://repo.packagist.org/p2/illuminate/support.json if modified
+Downloading https://repo.packagist.org/p2/psy/psysh.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/filesystem.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/validation.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/log.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/process.json if modified
+Downloading https://repo.packagist.org/p2/symfony/yaml.json if modified
+Downloading https://repo.packagist.org/p2/hamcrest/hamcrest-php.json if modified
+Downloading https://repo.packagist.org/p2/filp/whoops.json if modified
+Downloading https://repo.packagist.org/p2/facade/ignition-contracts.json if modified
+[304] https://repo.packagist.org/p2/illuminate/console.json
+[304] https://repo.packagist.org/p2/illuminate/contracts.json
+[304] https://repo.packagist.org/p2/illuminate/support.json
+[304] https://repo.packagist.org/p2/psy/psysh.json
+[304] https://repo.packagist.org/p2/illuminate/filesystem.json
+[304] https://repo.packagist.org/p2/illuminate/validation.json
+[304] https://repo.packagist.org/p2/illuminate/log.json
+[304] https://repo.packagist.org/p2/illuminate/process.json
+[304] https://repo.packagist.org/p2/symfony/yaml.json
+[304] https://repo.packagist.org/p2/hamcrest/hamcrest-php.json
+[304] https://repo.packagist.org/p2/filp/whoops.json
+[304] https://repo.packagist.org/p2/facade/ignition-contracts.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-webmozart~assert.json from cache
+Downloading https://repo.packagist.org/p2/webmozart/assert.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~lexer.json from cache
+Downloading https://repo.packagist.org/p2/doctrine/lexer.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-idn.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-idn.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~http-foundation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~promises.json from cache
+Downloading https://repo.packagist.org/p2/guzzlehttp/promises.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~psr7.json from cache
+Downloading https://repo.packagist.org/p2/guzzlehttp/psr7.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-client.json from cache
+Downloading https://repo.packagist.org/p2/psr/http-client.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php80.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php80.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~collections.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/collections.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~config.json from cache
+Downloading https://repo.packagist.org/p2/league/config.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~event-dispatcher.json from cache
+Downloading https://repo.packagist.org/p2/psr/event-dispatcher.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~deprecation-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem-local.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~mime-type-detection.json from cache
+Downloading https://repo.packagist.org/p2/league/mime-type-detection.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~uri-interfaces.json from cache
+Downloading https://repo.packagist.org/p2/league/uri-interfaces.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-factory.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-carbonphp~carbon-doctrine-types.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~clock.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~clock.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-mbstring.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~translation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~console.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-brick~math.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ramsey~collection.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~service-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~string.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php85.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~error-handler.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-ctype.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php83.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-egulias~email-validator.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-uuid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php72.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~css-selector.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-graham-campbell~result-type.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-phpoption~phpoption.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~macroable.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~view.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~process.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~prompts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nunomaduro~termwind.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~inflector.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~conditionable.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~reflection.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nesbot~carbon.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-voku~portable-ascii.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nikic~php-parser.json from cache
+[304] https://repo.packagist.org/p2/webmozart/assert.json
+Downloading https://repo.packagist.org/p2/psr/http-factory.json if modified
+[304] https://repo.packagist.org/p2/doctrine/lexer.json
+[304] https://repo.packagist.org/p2/guzzlehttp/psr7.json
+[304] https://repo.packagist.org/p2/psr/http-client.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php80.json
+Downloading https://repo.packagist.org/p2/carbonphp/carbon-doctrine-types.json if modified
+Downloading https://repo.packagist.org/p2/psr/clock.json if modified
+Downloading https://repo.packagist.org/p2/symfony/clock.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-mbstring.json if modified
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-idn.json
+[304] https://repo.packagist.org/p2/guzzlehttp/promises.json
+[304] https://repo.packagist.org/p2/illuminate/collections.json
+[304] https://repo.packagist.org/p2/league/config.json
+[304] https://repo.packagist.org/p2/psr/event-dispatcher.json
+[304] https://repo.packagist.org/p2/league/mime-type-detection.json
+[304] https://repo.packagist.org/p2/league/uri-interfaces.json
+Downloading https://repo.packagist.org/p2/symfony/translation.json if modified
+Downloading https://repo.packagist.org/p2/ramsey/collection.json if modified
+Downloading https://repo.packagist.org/p2/symfony/service-contracts.json if modified
+Downloading https://repo.packagist.org/p2/symfony/string.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php85.json if modified
+Downloading https://repo.packagist.org/p2/symfony/event-dispatcher.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-ctype.json if modified
+[304] https://repo.packagist.org/p2/psr/http-factory.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-uuid.json if modified
+[304] https://repo.packagist.org/p2/carbonphp/carbon-doctrine-types.json
+[304] https://repo.packagist.org/p2/psr/clock.json
+[304] https://repo.packagist.org/p2/symfony/clock.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-mbstring.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php72.json if modified
+Downloading https://repo.packagist.org/p2/symfony/css-selector.json if modified
+Downloading https://repo.packagist.org/p2/graham-campbell/result-type.json if modified
+Downloading https://repo.packagist.org/p2/phpoption/phpoption.json if modified
+[304] https://repo.packagist.org/p2/symfony/translation.json
+[304] https://repo.packagist.org/p2/ramsey/collection.json
+[304] https://repo.packagist.org/p2/symfony/service-contracts.json
+[304] https://repo.packagist.org/p2/symfony/string.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php85.json
+[304] https://repo.packagist.org/p2/symfony/event-dispatcher.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-ctype.json
+Downloading https://repo.packagist.org/p2/illuminate/macroable.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/view.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/conditionable.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/reflection.json if modified
+Downloading https://repo.packagist.org/p2/nikic/php-parser.json if modified
+[304] https://repo.packagist.org/p2/symfony/polyfill-uuid.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php72.json
+[304] https://repo.packagist.org/p2/symfony/css-selector.json
+[304] https://repo.packagist.org/p2/graham-campbell/result-type.json
+[304] https://repo.packagist.org/p2/phpoption/phpoption.json
+[304] https://repo.packagist.org/p2/illuminate/macroable.json
+[304] https://repo.packagist.org/p2/illuminate/view.json
+[304] https://repo.packagist.org/p2/illuminate/conditionable.json
+[304] https://repo.packagist.org/p2/illuminate/reflection.json
+[304] https://repo.packagist.org/p2/nikic/php-parser.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~var-dumper.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~finder.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~container.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/container.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~translation.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/translation.json if modified
+[304] https://repo.packagist.org/p2/illuminate/container.json
+[304] https://repo.packagist.org/p2/illuminate/translation.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php73.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php73.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~string.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~contracts.json from cache
+Downloading https://repo.packagist.org/p2/symfony/contracts.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~debug.json from cache
+Downloading https://repo.packagist.org/p2/symfony/debug.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~lexer.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~deprecations.json from cache
+Downloading https://repo.packagist.org/p2/doctrine/deprecations.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-message.json from cache
+Downloading https://repo.packagist.org/p2/psr/http-message.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ralouphie~getallheaders.json from cache
+Downloading https://repo.packagist.org/p2/ralouphie/getallheaders.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-normalizer.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-normalizer.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php70.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php70.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php84.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php84.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-dflydev~dot-access-data.json from cache
+Downloading https://repo.packagist.org/p2/dflydev/dot-access-data.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nette~schema.json from cache
+Downloading https://repo.packagist.org/p2/nette/schema.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~translation-contracts.json from cache
+Downloading https://repo.packagist.org/p2/symfony/translation-contracts.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php81.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-grapheme.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-paragonie~random_compat.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~events.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~container.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~filesystem.json from cache
+[304] https://repo.packagist.org/p2/symfony/polyfill-php73.json
+[304] https://repo.packagist.org/p2/symfony/contracts.json
+[304] https://repo.packagist.org/p2/symfony/debug.json
+[304] https://repo.packagist.org/p2/doctrine/deprecations.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php81.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-grapheme.json if modified
+Downloading https://repo.packagist.org/p2/symfony/event-dispatcher-contracts.json if modified
+Downloading https://repo.packagist.org/p2/paragonie/random_compat.json if modified
+[304] https://repo.packagist.org/p2/psr/http-message.json
+[304] https://repo.packagist.org/p2/ralouphie/getallheaders.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-normalizer.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php70.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php84.json
+[304] https://repo.packagist.org/p2/dflydev/dot-access-data.json
+[304] https://repo.packagist.org/p2/nette/schema.json
+[304] https://repo.packagist.org/p2/symfony/translation-contracts.json
+Downloading https://repo.packagist.org/p2/illuminate/events.json if modified
+[304] https://repo.packagist.org/p2/symfony/polyfill-php81.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-grapheme.json
+[304] https://repo.packagist.org/p2/symfony/event-dispatcher-contracts.json
+[304] https://repo.packagist.org/p2/paragonie/random_compat.json
+[304] https://repo.packagist.org/p2/illuminate/events.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~finder.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~cache.json from cache
+Downloading https://repo.packagist.org/p2/psr/cache.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nette~utils.json from cache
+Downloading https://repo.packagist.org/p2/nette/utils.json if modified
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~bus.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/bus.json if modified
+[304] https://repo.packagist.org/p2/psr/cache.json
+[304] https://repo.packagist.org/p2/nette/utils.json
+[304] https://repo.packagist.org/p2/illuminate/bus.json
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~pipeline.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/pipeline.json if modified
+[304] https://repo.packagist.org/p2/illuminate/pipeline.json
+Built pool.
+Running security advisory pool filter.
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-fakerphp~faker.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~framework.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~tinker.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~breeze.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~pail.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~sail.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-mockery~mockery.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nunomaduro~collision.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~deprecation-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-brick~math.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~container.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~inflector.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-dragonmantank~cron-expression.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-egulias~email-validator.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-fruitcake~php-cors.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~guzzle.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~uri-template.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~prompts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-laravel~serializable-closure.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~commonmark.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~flysystem-local.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~uri.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-monolog~monolog.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nesbot~carbon.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nunomaduro~termwind.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~log.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~simple-cache.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ramsey~uuid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~console.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~error-handler.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~finder.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~http-kernel.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~http-foundation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mailer.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php83.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~process.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~routing.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~uid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~var-dumper.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-tijsverkoyen~css-to-inline-styles.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-vlucas~phpdotenv.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-voku~portable-ascii.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~console.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~support.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psy~psysh.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~filesystem.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~validation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~log.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~process.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~yaml.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-hamcrest~hamcrest-php.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-filp~whoops.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-facade~ignition-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-webmozart~assert.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~lexer.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~psr7.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-client.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php80.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-idn.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-guzzlehttp~promises.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~collections.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~config.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~event-dispatcher.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~mime-type-detection.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-league~uri-interfaces.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-factory.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-carbonphp~carbon-doctrine-types.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~clock.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~clock.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-mbstring.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~translation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ramsey~collection.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~service-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~string.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php85.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-ctype.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-uuid.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php72.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~css-selector.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-graham-campbell~result-type.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-phpoption~phpoption.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~macroable.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~view.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~conditionable.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~reflection.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nikic~php-parser.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~container.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~translation.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php73.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~debug.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-doctrine~deprecations.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~http-message.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-ralouphie~getallheaders.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-normalizer.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php70.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php84.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-dflydev~dot-access-data.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nette~schema.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~translation-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php81.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-grapheme.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher-contracts.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-paragonie~random_compat.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~events.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-psr~cache.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-nette~utils.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~bus.json from cache
+Reading C:/Users/Asus/AppData/Local/Composer/repo/https---repo.packagist.org/provider-illuminate~pipeline.json from cache
+Security advisory pool filter completed in 0.288 seconds
+Found 11,817 package versions referenced in your dependency graph. 694 (6%) were filtered away.
+Running pool optimizer.
+Pool optimizer completed in 1.319 seconds
+Found 11,123 package versions referenced in your dependency graph. 10,422 (94%) were optimized away.
+Updating dependencies
+Generating rules
+Resolving dependencies through SAT
+Looking at all rules.
+Something's changed, looking at all rules again (pass #1)Something's changed, looking at all rules again (pass #2)Something's changed, looking at all rules again (pass #3)Something's changed, looking at all rules again (pass #4)Something's changed, looking at all rules again (pass #5)Something's changed, looking at all rules again (pass #6)Something's changed, looking at all rules again (pass #7)Something's changed, looking at all rules again (pass #8)Something's changed, looking at all rules again (pass #9)Something's changed, looking at all rules again (pass #10)Something's changed, looking at all rules again (pass #11)Something's changed, looking at all rules again (pass #12)Something's changed, looking at all rules again (pass #13)Something's changed, looking at all rules again (pass #14)Something's changed, looking at all rules again (pass #15)Something's changed, looking at all rules again (pass #16)Something's changed, looking at all rules again (pass #17)
+Dependency resolution completed in 0.136 seconds
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Root composer.json requires laravel/framework ^11.0 -> satisfiable by laravel/framework[v11.44.1, v11.44.2, v11.44.3, v11.44.4, v11.44.5, v11.44.6, v11.44.7, v11.45.0, v11.45.1, v11.45.2, v11.45.3, v11.46.0, v11.46.1, v11.46.2, v11.47.0, v11.48.0, v11.49.0, v11.50.0, v11.51.0].
+    - Root composer.json requires nunomaduro/collision ^6.0 -> satisfiable by nunomaduro/collision[v6.0.0, v6.1.0, v6.2.0, v6.2.1, v6.3.0, v6.3.1, v6.3.2, v6.4.0].
+    - laravel/framework v11.44.1 requires symfony/console ^7.0.3 -> satisfiable by symfony/console[v7.0.3, v7.0.4, v7.0.6, v7.0.7, v7.0.8, v7.0.9, v7.0.10, v7.1.0, v7.1.1, v7.1.2, v7.1.3, v7.1.4, v7.1.5, v7.1.6, v7.1.7, v7.1.8, v7.1.10, v7.2.0, v7.2.1, v7.2.5, v7.2.6, v7.2.7, v7.2.8, v7.2.9, v7.3.0, v7.3.1, v7.3.2, v7.3.3, v7.3.4, v7.3.5, v7.3.6, v7.3.8, v7.3.9, v7.3.10, v7.4.0, v7.4.1, v7.4.3, v7.4.4, v7.4.6, v7.4.7, v7.4.8].
+    - nunomaduro/collision[v6.0.0, v6.1.0, v6.2.0, v6.2.1, v6.3.0, v6.3.1, v6.3.2, v6.4.0] require symfony/console ^6.0.2 -> satisfiable by symfony/console[v6.0.2, v6.0.3, v6.0.5, v6.0.7, v6.0.8, v6.0.9, v6.0.10, v6.0.11, v6.0.12, v6.0.13, v6.0.14, v6.0.15, v6.0.16, v6.0.17, v6.0.19, v6.1.0, v6.1.1, v6.1.2, v6.1.3, v6.1.4, v6.1.5, v6.1.6, v6.1.7, v6.1.8, v6.1.9, v6.1.11, v6.2.0, v6.2.1, v6.2.2, v6.2.3, v6.2.5, v6.2.7, v6.2.8, v6.2.10, v6.2.11, v6.2.12, v6.2.13, v6.3.0, v6.3.2, v6.3.4, v6.3.8, v6.3.9, v6.3.11, v6.3.12, v6.4.0, v6.4.1, v6.4.2, v6.4.3, v6.4.4, v6.4.6, v6.4.7, v6.4.8, v6.4.9, v6.4.10, v6.4.11, v6.4.12, v6.4.13, v6.4.14, v6.4.15, v6.4.17, v6.4.20, v6.4.21, v6.4.22, v6.4.23, v6.4.24, v6.4.25, v6.4.26, v6.4.27, v6.4.30, v6.4.31, v6.4.32, v6.4.34, v6.4.35, v6.4.36].
+    - Conclusion: don't install symfony/console v7.3.10 (conflict analysis result)
+    - Conclusion: don't install symfony/console v7.4.8 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.2 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.3 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.4 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.5 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.6 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.44.7 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.45.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.45.1 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.45.2 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.45.3 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.46.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.46.1 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.46.2 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.47.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.48.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.49.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.50.0 (conflict analysis result)
+    - Conclusion: don't install laravel/framework v11.51.0 (conflict analysis result)
+    - You can only install one version of a package, so only one of these can be installed: symfony/console[v3.4.0, v3.4.1, v3.4.2, v3.4.3, v3.4.4, v3.4.5, v3.4.6, v3.4.7, v3.4.8, v3.4.9, v3.4.10, v3.4.11, v3.4.12, v3.4.13, v3.4.14, v3.4.15, v3.4.16, v3.4.17, v3.4.18, v3.4.19, v3.4.20, v3.4.21, v3.4.22, v3.4.23, v3.4.24, v3.4.25, v3.4.26, v3.4.27, v3.4.28, v3.4.29, v3.4.30, v3.4.31, v3.4.32, v3.4.33, v3.4.34, v3.4.35, v3.4.36, v3.4.37, v3.4.38, v3.4.39, v3.4.40, v3.4.41, v3.4.42, v3.4.43, v3.4.44, v3.4.45, v3.4.46, v3.4.47, v4.0.0, v4.0.1, v4.0.2, v4.0.3, v4.0.4, v4.0.5, v4.0.6, v4.0.7, v4.0.8, v4.0.9, v4.0.10, v4.0.11, v4.0.12, v4.0.13, v4.0.14, v4.0.15, v4.1.0, v4.1.1, v4.1.2, v4.1.3, v4.1.4, v4.1.5, v4.1.6, v4.1.7, v4.1.8, v4.1.9, v4.1.10, v4.1.11, v4.1.12, v4.2.0, v4.2.1, v4.2.2, v4.2.3, v4.2.4, v4.2.5, v4.2.6, v4.2.7, v4.2.8, v4.2.9, v4.2.10, v4.2.11, v4.2.12, v4.3.0, v4.3.1, v4.3.2, v4.3.3, v4.3.4, v4.3.5, v4.3.6, v4.3.7, v4.3.8, v4.3.9, v4.3.10, v4.3.11, v4.4.0, v4.4.1, v4.4.2, v4.4.3, v4.4.4, v4.4.5, v4.4.6, v4.4.7, v4.4.8, v4.4.9, v4.4.10, v4.4.11, v4.4.12, v4.4.13, v4.4.14, v4.4.15, v4.4.16, v4.4.17, v4.4.18, v4.4.19, v4.4.20, v4.4.21, v4.4.22, v4.4.23, v4.4.24, v4.4.25, v4.4.26, v4.4.27, v4.4.29, v4.4.30, v4.4.33, v4.4.34, v4.4.36, v4.4.37, v4.4.38, v4.4.40, v4.4.41, v4.4.42, v4.4.43, v4.4.44, v4.4.45, v4.4.47, v4.4.48, v4.4.49, v5.0.0, v5.0.1, v5.0.2, v5.0.3, v5.0.4, v5.0.5, v5.0.6, v5.0.7, v5.0.8, v5.0.9, v5.0.10, v5.0.11, v5.1.0, v5.1.1, v5.1.2, v5.1.3, v5.1.4, v5.1.5, v5.1.6, v5.1.7, v5.1.8, v5.1.9, v5.1.10, v5.1.11, v5.2.0, v5.2.1, v5.2.2, v5.2.3, v5.2.4, v5.2.5, v5.2.6, v5.2.7, v5.2.8, v5.2.10, v5.2.11, v5.2.12, v5.2.14, v5.3.0, v5.3.2, v5.3.4, v5.3.6, v5.3.7, v5.3.10, v5.3.11, v5.3.13, v5.3.14, v5.3.16, v5.4.0, v5.4.1, v5.4.2, v5.4.3, v5.4.5, v5.4.7, v5.4.8, v5.4.9, v5.4.10, v5.4.11, v5.4.12, v5.4.13, v5.4.14, v5.4.15, v5.4.16, v5.4.17, v5.4.19, v5.4.21, v5.4.22, v5.4.23, v5.4.24, v5.4.26, v5.4.28, v5.4.31, v5.4.32, v5.4.34, v5.4.35, v5.4.36, v5.4.39, v5.4.40, v5.4.41, v5.4.42, v5.4.43, v5.4.44, v5.4.45, v5.4.46, v5.4.47, v6.0.0, v6.0.1, v6.0.2, v6.0.3, v6.0.5, v6.0.7, v6.0.8, v6.0.9, v6.0.10, v6.0.11, v6.0.12, v6.0.13, v6.0.14, v6.0.15, v6.0.16, v6.0.17, v6.0.19, v6.1.0, v6.1.1, v6.1.2, v6.1.3, v6.1.4, v6.1.5, v6.1.6, v6.1.7, v6.1.8, v6.1.9, v6.1.11, v6.2.0, v6.2.1, v6.2.2, v6.2.3, v6.2.5, v6.2.7, v6.2.8, v6.2.10, v6.2.11, v6.2.12, v6.2.13, v6.3.0, v6.3.2, v6.3.4, v6.3.8, v6.3.9, v6.3.11, v6.3.12, v6.4.0, v6.4.1, v6.4.2, v6.4.3, v6.4.4, v6.4.6, v6.4.7, v6.4.8, v6.4.9, v6.4.10, v6.4.11, v6.4.12, v6.4.13, v6.4.14, v6.4.15, v6.4.17, v6.4.20, v6.4.21, v6.4.22, v6.4.23, v6.4.24, v6.4.25, v6.4.26, v6.4.27, v6.4.30, v6.4.31, v6.4.32, v6.4.34, v6.4.35, v6.4.36, v7.0.0, v7.0.1, v7.0.2, v7.0.3, v7.0.4, v7.0.6, v7.0.7, v7.0.8, v7.0.9, v7.0.10, v7.1.0, v7.1.1, v7.1.2, v7.1.3, v7.1.4, v7.1.5, v7.1.6, v7.1.7, v7.1.8, v7.1.10, v7.2.0, v7.2.1, v7.2.5, v7.2.6, v7.2.7, v7.2.8, v7.2.9, v7.3.0, v7.3.1, v7.3.2, v7.3.3, v7.3.4, v7.3.5, v7.3.6, v7.3.8, v7.3.9, v7.3.10, v7.4.0, v7.4.1, v7.4.3, v7.4.4, v7.4.6, v7.4.7, v7.4.8, v8.0.0, v8.0.1, v8.0.3, v8.0.4, v8.0.6, v8.0.7, v8.0.8].
+
+Running update with --no-dev does not mean require-dev is ignored, it just means the packages will not be installed. If dev requirements are blocking the update you have to resolve those problems.

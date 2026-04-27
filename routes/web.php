@@ -1,16 +1,17 @@
 <?php
-
-
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StudentArray;
+use App\Http\Controllers\uploadFile;
 use Illuminate\Support\Facades\Route;
-use Illuminate\http\Request;
+use Illuminate\Http\Request;
 use App\Mail\Testmail;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 // Secure route example
 Route::get('/secure',function(){
@@ -20,9 +21,9 @@ Route::get('/secure',function(){
     return "Use HTTPS to access this route";
 });
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 // Grouping routes with middleware
 Route::middleware('auth')->group(function () {
@@ -58,7 +59,7 @@ Route::get('user/{id}/{name}', function ($id, $name) {
 })->where(['id' => '[0-9]+', 'name' => '[A-Za-z]+']); // regular expression to ensure id is numeric and name is alphabetic
 
 // Controller Grouping
-Route::controller(App\Http\Controllers\StudentArray::class)->group(function () {
+Route::controller(StudentArray::class)->group(function () {
     Route::get('/students', 'index');
     Route::get('/students/names', 'printNames');
 });
@@ -74,8 +75,9 @@ Route::post('/form-submit', [FormController::class, 'submitForm']);
 // File upload route
 
 
-Route::get('/upload', [App\Http\Controllers\uploadFile::class, 'showUploadForm']);
-Route::post('/upload', [App\Http\Controllers\uploadFile::class, 'uploadFile']);
+Route::get('/upload', [uploadFile::class, 'showUploadForm']);
+Route::post('/upload', [uploadFile::class, 'uploadFile']);
+
 
 // Sending email route
 Route::get('/send-email', function () {
@@ -83,3 +85,23 @@ Route::get('/send-email', function () {
 
     return 'Email sent successfully!';
 });
+
+
+// Session route
+Route::get('/session', function(Request $request){
+    $request->session()->put('name', 'Shivam Kumar');
+    return [
+        'using-put-method' => 'Session stored successfully',
+        'using-get-method' => $request->session()->get('name')
+    ];
+})->middleware('web');
+
+// session using push method
+Route::get('/session-push', function(Request $request){
+    $names = $request->session()->get('names', []);
+    $names[] = 'Shivam Kumar';
+    $names[] = 'Rahul Kumar';
+    $request->session()->put('names', $names);
+
+    return $request->session()->get('names');
+})->middleware('web');
