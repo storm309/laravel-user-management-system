@@ -105,3 +105,47 @@ Route::get('/session-push', function(Request $request){
 
     return $request->session()->get('names');
 })->middleware('web');
+
+// Flash session example
+
+Route::get('/set',function(Request $request){
+    $request->session()->flash('info','Hello Flash');
+    return redirect('/now-test');
+});
+Route::get('/now-test',function(Request $request){
+    return view('now');
+});
+
+
+// Session helper functions example
+Route::get('/so',function(Request $request){
+    return[
+        'get'=>$request->session()->get('countries'), // returns null if key does not exist
+        'default-value'=>$request->session()->get('domain','AB'), // returns default value if key does not exist
+        'session'=>session('company-name'),
+        'all'=>$request->session()->all(), // returns all session data
+        'has'=> $request->session()->has('city') ? 'True' : 'False', // checks if key exists and is not null
+        'exists'=> $request->session()->exists('a') ? 'True' : 'False'// checks if key exists even if value is null
+    ];
+});
+
+// Session delete example using forget and flush method
+Route::get('/delete',function(Request $request){
+    $request->session()->forget('countries');
+    // $request->session()->flush(); // to delete all session data
+    return 'Session data deleted successfully';
+});
+
+
+Route::get('/so-delete', function(Request $request){
+    return[
+        'forget'=>$request->session()->get('domain'), // returns null if key does not exist
+         'pull'=>$request->session()->pull('countries', 'Default Value'), // returns value and deletes it from session, if key does not exist returns default value
+    ];
+});
+
+
+// Localization route
+Route::get('/lang', function () {
+    return view('lang');
+});

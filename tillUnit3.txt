@@ -254,3 +254,14 @@ This will pass the variable `name` with the value `John` to the `welcome` view.
 // global middleware in laravel
 Global middleware in Laravel is middleware that is applied to every HTTP request that enters your application.
  It is defined in the `app/Http/Kernel.php` file under the `$middleware` property.
+
+// all things about sessions in laravel
+Sessions in Laravel provide a way to store information about the user across multiple requests. This is useful for maintaining user state, such as keeping a user logged in or storing temporary data. Laravel provides a simple and intuitive API for working with sessions. Here are some key points about sessions in Laravel:
+// sessions like flash session, normal session, and how to use them
+
+
+// Localization in Laravel
+Localization in Laravel allows you to support multiple languages in your application.
+It provides a convenient way to manage translations and display content in different languages based on the user's preferences.
+ Laravel uses language files to store translations, which are typically located in the `resources/lang` directory.
+ Each language has its own subdirectory, and within each subdirectory, you can create PHP files that return an array of translation strings. For example, you might have a `resources/lang/en/messages.php` file for English translations and a `resources/lang/es/messages.php` file for Spanish translations. You can then use the `__` helper function to retrieve the appropriate translation based on the current locale. For example:
