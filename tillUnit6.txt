@@ -265,3 +265,36 @@ Localization in Laravel allows you to support multiple languages in your applica
 It provides a convenient way to manage translations and display content in different languages based on the user's preferences.
  Laravel uses language files to store translations, which are typically located in the `resources/lang` directory.
  Each language has its own subdirectory, and within each subdirectory, you can create PHP files that return an array of translation strings. For example, you might have a `resources/lang/en/messages.php` file for English translations and a `resources/lang/es/messages.php` file for Spanish translations. You can then use the `__` helper function to retrieve the appropriate translation based on the current locale. For example:
+
+
+
+// Query Builder using DB Facade in Laravel
+The Query Builder in Laravel provides a fluent interface for building and executing database queries. It allows you to construct complex SQL queries using a simple and intuitive syntax. The Query Builder is accessed through the `DB` facade, which provides various methods for performing database operations. Here are some examples of how to use the Query Builder with the `DB` facade in Laravel:
+1. **Selecting Data**:
+```phpuse Illuminate\Support\Facades\DB;
+
+// ORM uses Eloquent, which is Laravel's built-in Object-Relational Mapping (ORM) system. Eloquent provides an active record implementation for working with your database. It allows you to interact with your database using model classes that represent your database tables. Each model class corresponds to a specific table in your database, and you can use Eloquent's methods to perform CRUD operations on that table. For example, if you have a `Product` model that corresponds to a `products` table, you can use Eloquent to retrieve all products like this:
+$products = Product::all();
+// orm uses object method to fetch data from database and query builder uses query method to fetch data from database
+
+
+// what is fillable and mass assignment in laravel
+In Laravel, mass assignment refers to the ability to assign multiple attributes to a model in a single step, typically when creating or updating a model instance.
+This can be done using the `create` or `update` methods on an Eloquent model. However, to prevent mass assignment vulnerabilities, Laravel requires you to specify which attributes are mass assignable using the `$fillable` property on your model. The `$fillable` property is an array that contains the names of the attributes that you want to allow for mass assignment. For example, if you have a `Product` model and you want to allow mass assignment for the `name`, `description`, and `price` attributes, you would define the `$fillable` property like this:
+```php<?php
+namespace App\Models;
+
+
+// Query builder
+insert data is multiple
+DB::table
+update using get method
+where method is used to update data
+delete using delete method
+
+// ORM
+insert data is single
+update using save method
+where method is used to update data
+delete using delete method
+use Illuminate\Database\Eloquent\Model;

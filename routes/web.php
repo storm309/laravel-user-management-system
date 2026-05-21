@@ -6,7 +6,26 @@ use App\Http\Controllers\uploadFile;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Mail\Testmail;
+use App\Models\sports;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
+
+Route::get('/insert', function () {
+
+    DB::table('sports')->insert([
+        'name' => 'Football',
+        'description' => 'A team sport played with a spherical ball',
+        'is_olympic_sport' => 1,
+        'origin_country' => 'England',
+        'first_played_date' => '1863-10-26',
+        'created_at' => now(),
+        'updated_at' => now(),
+    ]);
+
+    return "Data Inserted Successfully";
+
+});
 
 Route::get('/', function () {
     return view('welcome');
@@ -146,6 +165,88 @@ Route::get('/so-delete', function(Request $request){
 
 
 // Localization route
-Route::get('/lang', function () {
+Route::get('/lang', function (Request $request) {
     return view('lang');
+});
+
+
+// Fetch all the data from sports table
+Route::get('/fetch-all-sports', function () {
+    $sports = DB::table('sports')->get();
+    return $sports;
+});
+
+// Fetch specific columns from sports table
+Route::get('/fetch-condition-sports', function () {
+    $sports = DB::table('sports')->where('is_olympic_sport', true)->get();
+    return $sports;
+});
+
+// data using Order by based on sports names
+Route::get('/order-by-sports', function () {
+    $sports = DB::table('sports')->orderBy('name')->get();
+    return $sports;
+});
+
+
+// Update data in sports table
+Route::get('/update-sports', function () {
+    DB::table('sports')->where('id', 1)->update([
+        'description' => 'A popular team sport played with a spherical ball',
+        'origin_country' => 'United Kingdom',
+    ]);
+    return 'Data updated successfully';
+});
+
+
+// Delete data from sports table
+Route::get('/delete-sports', function () {
+    DB::table('sports')->where('id', 2)->delete();
+    return 'Data deleted successfully';
+});
+
+
+// Using ORM (object-relational mapping) to fetch all sports
+Route::get('/insert-orm', function () {
+    sports::create([
+        'name' => 'Volleyball',
+        'description' => 'A team sport in which two teams of six players are separated by a net',
+        'is_olympic_sport' => 1,
+        'origin_country' => 'United States',
+        'first_played_date' => '1895-02-09',
+    ]);
+    return 'Data inserted successfully using ORM';
+});
+
+// fetch using ORM with condition
+Route::get('/fetch-condition-orm', function () {
+    $sports = sports::where('is_olympic_sport', true)->get();
+    return $sports;
+});
+
+// fetch all sports using ORM
+Route::get('/fetch-orm', function () {
+    $sports = sports::all();
+    return $sports;
+});
+
+// update using ORM
+Route::get('/update-orm', function () {
+    sports::find(3)->update([
+        'description' => 'A racket sport that can be played individually or between two teams of two players',
+        'origin_country' => 'United Kingdom',
+    ]);
+    return 'Data updated successfully using ORM';
+});
+
+// delete using ORM
+Route::get('/delete-orm', function () {
+    sports::find(4)->delete();
+    return 'Data deleted successfully using ORM';
+});
+
+// using destroy method to delete data using ORM
+Route::get('/destroy-orm', function () {
+    sports::destroy(5);
+    return 'Data deleted successfully using destroy method in ORM';
 });
