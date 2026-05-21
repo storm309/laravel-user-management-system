@@ -17,10 +17,11 @@ class SportFactory extends Factory
     public function definition(): array
     {
         return [
-            //
-            'name' => $this->faker->word(),
-            'description' => $this->faker->sentence(),
-            'origin_country' => $this->faker->country()
+            'name'             => $this->faker->word(),
+            'description'      => $this->faker->sentence(),
+            'is_olympic_sport' => $this->faker->boolean(),
+            'origin_country'   => $this->faker->country(),
+            'first_played_date'=> $this->faker->date(),
         ];
     }
 }
